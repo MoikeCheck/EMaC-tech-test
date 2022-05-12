@@ -20,7 +20,8 @@
   "homepage": "https://github.com/northcoders/r2-tech-test#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "pluralize": "^8.0.0"
   },
   "devDependencies": {
     "jest": "^27.5.1",
