@@ -12,11 +12,11 @@ Given more time I would also of liked to have carried out more testing and of co
 - `/api`
   - GET - Returns a 200 and an `ok` message when the server is online
 
-  - GET `/api/recipes`  responds with a list of all recipes.Includes a query to exclude recipes that contain any ingredients provided by the user ingredients.
+  - GET `/api/recipes`  responds with a list of all recipes. Includes a query to exclude recipes that contain any ingredients provided by the user ingredients.
 
   - GET `/api/recipes/:id` - responds with a single recipe based on the id provided, for example: 'localhost:9090/api/recipes/recipe-111'
 
- - POST `/api/recipes` - posts a new recipe to the recipe data.
+ - POST `/api/recipes` - posts a new recipe to the recipes data and provides a new id to the recipe.
 
 ## Prerequisites
 
