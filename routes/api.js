@@ -59,7 +59,7 @@ apiRouter.post("/recipes", (req, res) => {
           if (err) {
             console.log(err);
           } else {
-            res.status(201).json({updatedRecipes});
+            res.status(201).json(updatedRecipes);
           }
         }
       );
