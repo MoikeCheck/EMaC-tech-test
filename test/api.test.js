@@ -128,6 +128,9 @@ describe(" POST /api/recipes", () => {
         { name: "cocoa nibs", grams: 154 },
       ],
     };
-    await request.post("/api/recipes").send(newRecipe).expect(201);
+    const { body } = await request
+      .post("/api/recipes")
+      .send(newRecipe)
+      .expect(201);
   });
 });

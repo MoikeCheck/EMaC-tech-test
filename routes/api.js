@@ -49,6 +49,7 @@ apiRouter.post("/recipes", (req, res) => {
     } else {
       const recipes = JSON.parse(data);
       const newRecipe = { id: `recipe-${recipes.length}`, ...req.body };
+      console.log(req.body)
       const updatedRecipes = [...recipes];
       updatedRecipes.push(newRecipe);
       fs.writeFile(
@@ -58,7 +59,7 @@ apiRouter.post("/recipes", (req, res) => {
           if (err) {
             console.log(err);
           } else {
-            res.status(201).send({ updatedRecipes });
+            res.status(201).json({updatedRecipes});
           }
         }
       );
